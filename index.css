@@ -1,52 +1,68 @@
 body{
     margin: 0;
-
-
 }
 
+
 .home{
-    background-image: url(https://wallpapercave.com/wp/wp2460796.jpg);
     width: 100vw;
     height: 100vh;
     margin: 0;
+    overflow-y: scroll;
+    background-attachment: scroll;
+}
+
+.videos{
+  position: absolute;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
+}
 
 
+video {
+    position: fixed; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 
 }
 
-.home{
-    
-}
+
+
 
 .Indices{
     display: flex;
     width: 100vw;
+    height: 13vh;
+    position: fixed;
+    opacity: 90%;
 }
+
 
 .Indice{
     display: flex;
     background-color: black;
-    opacity: 70%;
     color: white;
     width: 100vw;
-
 }
+
 
 .indiced{
     display: flex;
     background-color: black;
-    opacity: 70%;
     color: white;
     width: 100vw;
     justify-content: flex-end;
     padding-right: 30px;
 }
 
+
 .opciones{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+   
 }
 .nombre_pagina{
     display: flex;
@@ -55,15 +71,17 @@ body{
     justify-content: fl;
 }
 
+
 h4{
    list-style: none;
    padding-right: 15px;
 }
 
+
 .medio{
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     align-content: center;
 }
 
@@ -77,8 +95,19 @@ h4{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 .requerimientos{
-    background-image: url(https://get.wallhere.com/photo/apocalyptic-vehicle-fire-desert-explosion-Mad-Max-Mad-Max-game-screenshot-atmosphere-of-earth-pc-game-133343.jpg);
+    background-color: darkslategrey;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -88,9 +117,21 @@ h4{
 }
 
 
+.clores{
+    display: flex;
+    background-image: url(foto3.jpg);
+    width: 80vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+}
+
 .tablas{
     display: flex;
 }
+
 
 .tablauno{
     background-color: black;
@@ -102,6 +143,11 @@ h4{
     margin-right: 5px;
 }
 
+#header.tablauno{
+    size: 40px;
+}
+
+
 .tablados{
     background-color: black;
     opacity: 85%;
@@ -112,11 +158,13 @@ h4{
     margin-left: 5px;
 }
 
+
 ul.rm{
     list-style: none;
     color: white
-    
+   
 }
+
 
 ul.rr{
     list-style: none;
@@ -125,20 +173,32 @@ ul.rr{
 
 
 
-.actualizacionesu{
-    background-image: url(https://get.wallhere.com/photo/apocalyptic-vehicle-fire-desert-explosion-Mad-Max-Mad-Max-game-screenshot-atmosphere-of-earth-pc-game-133343.jpg);
+
+
+
+
+
+
+
+
+
+
+.actualizaciones{
+    background-color: darkslateblue;
     width: 100vw;
     height: 100vh;
 }
+
+
 
 .filau{
     display: flex;
 }
 
+
 .filad{
     display: flex;
 }
-
 
 
 .update10{
@@ -147,11 +207,20 @@ ul.rr{
     color: white;
     flex-direction: column;
     border-radius: 45px;
-    margin-right: 5vw;
     height: 20vh;
+    margin-right: 5vw;
     margin-left: 10vw;
-    margin-top: 120px;
+    margin-top: 265px;
+    transition: all 0.7s ease;
 }
+
+.update10:hover{
+    background-color: white;
+    color: black;
+    height: 25vh;
+    width: 65vw;
+}
+
 
 .update11{
     display: flex;
@@ -162,8 +231,17 @@ ul.rr{
     padding-bottom: 0px;
     margin-right: 5vw;
     height: 20vh;
-    margin-top: 120px;
+    margin-top: 265px;
+    transition: all 0.7s ease;
 }
+
+.update11:hover{
+    background-color: white;
+    color: black;
+    height: 25vh;
+    width: 45vw;
+}
+
 
 .update12{
     display: flex;
@@ -173,10 +251,61 @@ ul.rr{
     border-radius: 45px;
     height: 20vh;
     margin-right: 10vw;
-    margin-top: 120px;
+    margin-top: 265px;
+    transition: all 0.7s ease;
 }
 
+.update12:hover{
+    background-color: white;
+    color: black;
+    height: 25vh;
+    width: 65vw;
+}
+
+
 .update13{
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    border-radius: 45px;
+    margin-right: 5vw;
+    height: 20vh;
+    margin-left: 10vw;
+    margin-top: 120px;
+    transition: all 0.7s ease;
+}
+
+.update13:hover{
+    background-color: white;
+    color: black;
+    height: 25vh;
+    width: 65vw;
+}
+
+
+.update14{
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    border-radius: 45px;
+    padding-bottom: 0px;
+    margin-right: 5vw;
+    height: 20vh;
+    margin-top: 120px;
+    transition: all 0.7s ease;
+}
+
+.update14:hover{
+    background-color: white;
+    color: black;
+    height: 25vh;
+    width: 65vw;
+}
+
+
+.update15{
     display: flex;
     background-color: black;
     color: white;
@@ -185,4 +314,59 @@ ul.rr{
     height: 20vh;
     margin-right: 10vw;
     margin-top: 120px;
+    transition: all 0.7s ease;
 }
+
+.update15:hover{
+    background-color: white;
+    color: black;
+    height: 25vh;
+    width: 65vw;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+
+
+.about{
+    width: 100vw;
+    height: 100vh;
+    background-color: palevioletred;
+}
+
+.Descripcion{
+    display: flex;
+    width: 70vw;
+    height: 50vh;
+    font-family:"Calibri", sans-serif;
+
+}
+
+.todo_about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.videoab{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 130px;
+}
+
+.contacto{
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+    
+}
+
+
+
+
